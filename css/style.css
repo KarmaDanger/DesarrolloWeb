@@ -1,0 +1,616 @@
+/*comentarios*/
+/* sintáxis css
+{elemento
+    propiedad:valor;
+}
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 20px;
+    color: #161302;
+}
+
+body{
+    margin: 0;
+    padding:0 80px;
+    background-color: #F6F4EB;
+     /* Google fonts */
+     font-family: 'Poppins', sans-serif;
+     
+}
+/* HEAD STYLES */
+h1 { 
+    font-size:100px;
+    font-weight:900;
+    font-style: normal;
+    line-height: 88px;
+    text-transform: uppercase;
+    }
+
+h2 { 
+        
+        font-size:88px;
+        font-weight:900;
+        line-height:72px;
+        text-transform: uppercase;
+        }
+
+h3 { 
+            
+            font-size:60px;
+            font-weight:600;
+            line-height:52px;
+            text-transform: uppercase;
+            }
+h4 { 
+            
+            font-size:40px;
+            font-weight:400;
+            line-height:32px;
+            text-transform: uppercase;
+            }
+/* p style */
+
+p{
+    font-size: 20px;
+    font-weight: normal;
+    
+}
+/* a stlye */
+a{
+    color:#161302; /* Color del texto del botón */
+}
+
+a:after{
+    color:#FFDB00; /* Color del texto del botón */
+    text-decoration: none;
+    
+}
+
+
+/* a stlye */
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.button-nav{
+    background-color: #FFDB00;
+    text-decoration: none;
+}
+
+
+/* button header*/
+
+/* Estilos para el botón de contacto */
+.btn.button-nav {
+    color: black; /* Color de texto inicial (negro) */
+    background-color:#FFDB00; /* Fondo transparente */
+    border-radius: 0;
+}
+
+/* Cambiar el color del texto al pasar el cursor (hover) */
+.btn.button-nav:hover {
+    color: black; /* Color de texto al hacer hover (blanco) */
+    background-color:#F6F4EB; /* Fondo negro al hacer hover */
+}
+
+
+/* button body*/
+.button-body {
+    display: inline-flex; /* Mostrar el botón como un elemento en línea flexible */
+    padding: 24px; /* Espacio interno del botón */
+    align-items: flex-start; /* Alinear los elementos del botón hacia la parte superior */
+    gap: 12px; /* Espacio entre elementos hijos del botón */
+    background-color:#FFDB00; /* Color de fondo del botón */
+    border: none; /* Eliminar el borde del botón */
+    font-size: 16px; /* Tamaño de fuente del texto del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+/* Cambiar estilos cuando se pasa el cursor sobre el botón */
+.button-body:hover {
+    background-color:#F6F4EB; /* Cambiar el color de fondo al pasar el cursor */
+    text-decoration: none;
+    
+}
+
+
+
+
+/* header style */
+
+.header{
+    position: fixed;
+    left: 0 ;
+    top: 0;
+    right: 0;  
+    width: 100%;
+}
+
+/* Estilos personalizados para el navbar */
+.navbar-custom {
+    background-color:#161302; /* Color de fondo personalizado */
+    align-items: center;
+    display: flex;
+    padding: 20px;  
+    justify-content: space-between;
+
+    /* Otros estilos personalizados */
+}
+
+.custom-toggler-icon {
+    background-color:#F6F4EB; /* Cambia el color de fondo de las líneas */
+}
+
+/* menú styles */
+nav ul {
+    list-style: none; /* Eliminar las viñetas de la lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Mostrar elementos en línea (en la misma fila) */
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+nav a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color:#161302;
+}
+
+
+
+
+/* footer styles */
+
+#contenedor-footer{
+    background-color: #161302;
+    width:100% ;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 0;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+/* Estilos del logotipo en el footer */
+.footer-left img {
+    display: block; /* Asegura que la imagen no tenga margen inferior */
+    margin: 0 auto 10px; /* Centrar la imagen horizontalmente y agregar espacio en la parte inferior */
+
+}
+
+/* Estilos de la navegación en el footer */
+.footer-center nav ul {
+    list-style: none; /* Eliminar las viñetas de la lista */
+    padding: 0;
+}
+
+.footer-center nav ul li {
+    display: inline; /* Mostrar elementos en línea (en la misma fila) */
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+.footer-center nav a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: #F6F4EB; /* Color del texto de los enlaces */
+    
+}
+
+/* Estilos de la leyenda de copyright en el footer */
+.footer-right p {
+    font-size: 14px; /* Tamaño de fuente más pequeño para la leyenda */
+    color: #F6F4EB;
+}
+/* banner styles */
+#main-banner{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    padding: 40px; 
+    align-items: center;
+    gap: 24px;
+}
+
+#texto{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+}
+
+.frase-inicial{
+display: flex;
+width: 633px;
+flex-direction: column;
+align-items: flex-start;
+}
+
+#imagen{
+display: flex;
+width: 715px;
+height: 799px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex-shrink: 0;
+}
+
+#button-header{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+/* secc about index*/
+#about{
+display: flex;
+padding: 80px;
+justify-content: center;
+align-items: center;
+gap: 24px;
+align-self: stretch;
+}
+
+#since{
+display: flex;
+width: 417px;
+height: 203px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+
+/*productos*/
+
+
+
+.contenedor_productos{
+    display: flex;
+    padding: 40px 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.wurst{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.emparedado{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.siders{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+/* servicios */
+.servicios{
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    }
+
+.textos{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex-shrink: 0;
+}
+ .imagenes-servicios{
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+ }
+
+ .imagen_corporativos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+ }
+
+ .imagen_sociales{
+    display: flex;
+    width: 304px;
+    align-items: flex-start;
+    gap: 14px;
+ }
+
+ .imagen_masivos{
+    display: flex;
+    width: 304px;
+    align-items: flex-start;
+    gap: 14px;
+ }
+
+ /* NUESTROS SERVICIOS*/
+ .contrataciones{
+display: flex;
+width: 100%;
+padding: 20px;
+align-items: flex-start;
+gap: 123px;
+}
+
+.imagen_nuestros_servicios{
+display: flex;
+width: 740px;
+height: 637px;
+flex-direction: column;
+align-items: flex-start;
+flex-shrink: 0;
+
+}
+
+.contenedor_textos{
+ display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+
+
+/* QUIENES SOMOS SECTION*/
+.video{
+display: flex;
+padding-top: 113px;
+align-items: center;
+gap: 12px;
+}
+
+.general{
+display: flex;
+padding: 80px;
+justify-content: center;
+align-items: center;
+gap: 18px;
+align-self: stretch;
+}
+
+.wie{
+display: flex;
+width:auto;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+
+}
+
+.descrip{
+    display: flex;
+    width: 417px;
+    height: 203px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px; 
+}
+
+
+.slider{
+display: flex;
+width: 100%;
+height: 400px;
+justify-content: center;
+align-items: center;
+gap: 24px;
+}
+
+
+.titulo-parrafo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:flex-start;
+width: 417PX;
+gap: 24px;
+}
+
+.foto{
+display: flex;
+width: 417px;
+height: 269px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+}
+
+/* MAIN BANNER STYLES */
+
+.main_banner{
+display: flex;
+width: 100%;
+height: 600px;
+align-items: center;
+gap: 12px;
+}
+
+.main_banner_img{
+display: flex;
+width: 715px;
+height: 585px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex-shrink: 0;
+}
+
+.encabezado{
+display: flex;
+width: 633px;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+flex-shrink: 0;
+}
+
+/* PRODUCTOS 
+
+
+
+.productos_intro{
+    display: flex;
+    width: 309px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.productos_grid{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+
+}
+
+.grupo_tres{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.item_card{
+display: flex;
+height: 269px;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+}*/
+
+/* PRODUCTOS CON GRID */
+.container_food{
+    display: grid;
+    padding: 80px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-gap: 20px; /* Espacio entre elementos */
+}
+
+.productos_main{
+    display: flex;
+    align-items:flex-start;
+    gap: 20px;
+    align-self: stretch;
+    padding: 20px;
+}
+
+.productos_intro {
+    grid-column: span 3; /* Ocupa 2 columnas completas */
+}
+
+.productos_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-gap: 20px; /* Espacio entre elementos */
+}
+
+.grupo_tres {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 columna en tamaños pequeños */
+    grid-gap: 20px; /* Espacio entre elementos */
+}
+
+.item_card {
+    border:none;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* EVENTOS SECTION STYLES */
+
+.contenedor_eventos{
+display: flex;
+padding: 20px 60px;
+align-items: flex-start;
+gap: 18px;
+align-self: stretch;
+}
+
+.evento_texto{
+    display: flex;
+    width: 525px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.evento_imagen{
+    display: flex;
+    width: 734px;
+    height: 269px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+}
+
+/* CONTACTO STYLES */
+.general_container{
+    display: flex;
+    padding: 80px;
+    align-items: flex-start;
+    gap: 105px;
+    align-self: stretch;
+}
+
+.formulario_container{
+display: flex;
+width: 740px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 48px;
+align-self: stretch;
+}
+.titulo_descrip{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.datos_contacto{
+    display: flex;
+    height: 380px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ /* Unidades fijas
+Su valor no se va a modificar 
+*/
+
+/* Unidades relativas
+Su valor se va a adaptar al contenedor padre o documento html (responsive)
+% porcentaje
+REM
+EM
+*/
